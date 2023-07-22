@@ -55,4 +55,5 @@ class Follow(models.Model):
     following = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
+        verbose_name = 'подписка'
         unique_together = ("user", "following")
